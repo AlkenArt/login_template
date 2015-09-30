@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, minimum-scale=.25 user-scalable=yes"/>
+<link rel="stylesheet" href="/login_template/libraries/bootstrap-3.3.4-dist/css/bootstrap.css">
+<link rel="stylesheet" href="/login_template/css/login.css">
+<link rel="icon" href="http://images.synacor.com/clientimages/69223/23215.ico" type="image/x-icon">
+<title>Login page | AlkenArts</title>
+</head>
+<body class="body" ng-app="login_template" ng-controller="loginController">
+	<div class="" align="center">
+	<div id="formPanel" class="panel panel-default panel-body">
+		<form role="form" name="loginForm" class="form-horizontal">
+			<div>
+				<div></div>
+				<div><h2 style="color: blue;">AlkenArts</h2></div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-md-4">Username*:</label>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Enter Usename" ng-model="user.username" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-md-4">Password*:</label>
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Enter Password" ng-model="user.password" required>
+				</div>
+			</div>
+			<div class="form-group"> 
+			   <div class="">
+			     <button ng-click="submit('/home')" type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">Submit</button>
+			   </div>
+			   <h4><span ng-show="loginError" class="help-block" style="color: red">Username & Password is Wrong</span><br></h4>
+			 </div>
+		</form>
+	</div>
+	</div>
+</body>
+</html>
