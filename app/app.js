@@ -18,8 +18,6 @@ function loginController($scope, $location){
         	{
         	 //console.log($scope.user);
 			 $location.path(pathurl);
-			 //$rootScope.loggedInUser = $scope.user.username;
-			 //$cookieStore.put('userId',$scope.user.username);
         	}
 			else
         	{
