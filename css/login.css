@@ -1,0 +1,42 @@
+/* @media only screen and (min-width: 250px) { */
+	
+/* } */
+
+/* @media only screen and (max-width: 250px) { */
+	
+/* } */
+/* @media only screen and (min-width: 250px) and (max-width: 768px){ */
+/* } */
+
+@media only screen and (max-width: 768px){
+	#formPanel{
+		height: 50%;
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	#formPanel{
+		height: 50%;
+		width: 75%;
+	}
+}
+
+/* @media only screen and (min-width: 992px) and (max-width: 1024px){ */
+/* } */
+
+/* @media only screen and (min-width: 1024px) and (max-width: 1400px){ */
+/* } */
+
+/* @media only screen and (min-width:1400px){ */
+/* } */
+
+@media only screen and (min-width: 992px) {
+    #formPanel{
+		height: 50%;
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	 
+}
