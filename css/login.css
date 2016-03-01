@@ -1,4 +1,7 @@
-/* @media only screen and (min-width: 250px) { */
+.warning{
+   border:1px solid red;
+ }
+ /* @media only screen and (min-width: 250px) { */
 	
 /* } */
 
