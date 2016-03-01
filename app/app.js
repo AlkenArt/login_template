@@ -31,6 +31,7 @@ function loginController($scope, $location, $http){
 	$scope.email = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;
 	$scope.loginError=false;
 	$scope.submit = function(pathurl){
+<<<<<<< HEAD
 			$http.get('http://localhost:8080/login_template/data/user.json')
 			.success(function(data){
 				if($scope.user.username==data.user.username && $scope.user.password==data.user.password)
@@ -49,6 +50,18 @@ function loginController($scope, $location, $http){
 			.error(function(data, status){
 				$scope.errormessage="User list is not available";
 			});
+=======
+			if($scope.user.username=="sample" && $scope.user.password=="sample")
+        	{
+        	 //console.log($scope.user);
+			 $location.path(pathurl);
+        	}
+			else
+        	{
+        		$scope.loginError=true;
+        		//alert("wrong username or password");
+        	}
+>>>>>>> 69abc16b1c735a50063c25fcaa1fada9306f73d9
 		}
 	
 };
